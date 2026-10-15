@@ -2,9 +2,8 @@
 
 A task management REST API built with C# and ASP.NET Core.
 
-## About the Project
-
-This project is being developed as a learning and portfolio project to practice backend development, REST APIs, and database integration.
+> **Project status: In Progress**  
+> This is an active learning and portfolio project. Core CRUD endpoints are implemented, and database integration is currently in progress.
 
 ## Technologies
 
@@ -15,33 +14,50 @@ This project is being developed as a learning and portfolio project to practice 
 - Swagger / OpenAPI
 - Git and GitHub
 
-## Current Features
+## Implemented Features
 
-- Retrieve all tasks
-- Retrieve a task by ID
-- Create a task
-- Update a task
-- Delete a task
+- [x] Retrieve all tasks
+- [x] Retrieve a task by ID
+- [x] Create a task
+- [x] Update an existing task
+- [x] Delete a task
+- [x] Separate HTTP handling from task-related logic using a service
+- [x] Configure Swagger for API testing
+- [x] Add an initial Entity Framework Core and MySQL configuration
+
+## Work in Progress
+
+- [ ] Connect CRUD operations to MySQL through Entity Framework Core
+- [ ] Replace in-memory task storage with database persistence
+- [ ] Configure and verify database schema management
+- [ ] Add input validation and consistent error handling
+- [ ] Add automated tests
 
 ## Project Structure
 
 - `Controllers` — handles HTTP requests and responses.
-- `Models` — contains data models.
+- `Models` — defines task data.
 - `Services` — contains task-related logic.
 - `Data` — contains the Entity Framework Core database context.
-
-## Project Status
-
-Work in progress. MySQL and Entity Framework Core configuration has been added. Integration of the API's CRUD operations with the database is the next development step.
 
 ## Running Locally
 
 1. Install the .NET SDK compatible with the project.
 2. Install and start MySQL.
 3. Configure the `DefaultConnection` connection string using .NET User Secrets.
-4. Run the project from Visual Studio.
+4. Run the project in Visual Studio.
 5. Open the Swagger UI URL shown when the application starts.
 
-## Notes
+**Note:** Database integration is still in progress. The current task storage is in memory, so task changes are not preserved after the application restarts.
 
-This is a work in progress. Features and documentation will be updated as development continues.
+## Future Improvements
+
+- Complete MySQL integration
+- Add automated tests
+- Improve validation and error handling
+- Add authentication and authorization
+- Improve API documentation
+
+## Purpose
+
+This project is being developed to practice backend development with C#, ASP.NET Core, REST APIs, and relational databases. The README will be updated as new features are implemented.
